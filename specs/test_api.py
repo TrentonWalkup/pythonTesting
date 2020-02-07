@@ -9,4 +9,4 @@ def test_get_pizza_orders_crusts_no_stuffed_crust():
     response = requests.get("https://order-pizza-api.herokuapp.com/api/orders")
     response_body = response.json()
     for crust in response_body:
-        assert crust["Crust"] != 'Stuffed'
+        assert crust["Crust"] != "Stuffed"
